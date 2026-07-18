@@ -7,7 +7,7 @@ name = "spades-agent-rl"
 version = "0.1.0"
 description = "Spades environment and agent training scaffold"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 dependencies = []
 
 [tool.setuptools]

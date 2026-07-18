@@ -1,15 +1,18 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from enum import IntEnum, StrEnum
+from enum import Enum, IntEnum
 from random import Random
 
 
-class Suit(StrEnum):
+class Suit(str, Enum):
     CLUBS = "Clubs"
     DIAMONDS = "Diamonds"
     HEARTS = "Hearts"
     SPADES = "Spades"
+
+    def __str__(self) -> str:
+        return self.value
 
 
 class Rank(IntEnum):
